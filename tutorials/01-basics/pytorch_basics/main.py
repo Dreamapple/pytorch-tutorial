@@ -20,6 +20,7 @@ from torch.autograd import Variable
 
 #======================= Basic autograd example 1 =======================#
 # Create tensors.
+# 在这里进行运算只能是Variable与Variable，或者Tensor与Tensor，不能混用
 x = Variable(torch.Tensor([1]), requires_grad=True)
 w = Variable(torch.Tensor([2]), requires_grad=True)
 b = Variable(torch.Tensor([3]), requires_grad=True)
